@@ -12,18 +12,28 @@ Dataset được sử dụng trong dự án này là FER2013, được thu thậ
 ## 2. Cách chạy chương trình:
 
 - Thực hiện các lệnh sau để tạo môi trường ảo cho dự án:
+```bash
 $ virtualenv emotion-detection-cnn
 $ emotion-detection-cnn/Scripts/activate
+```
 
 - Install các thư viện cần thiết vào môi trường ảo:
+```bash
 $ pip install -r requirement.txt
+```
 
 - Di chuyển vào thư mục src:
+```bash
 $ cd ./src
+```
 
 - Training model:
+```bash
 $ python emotions.py --mode train
+```
 Lúc này chương trình sẽ thực hiện đọc dữ liệu từ dataset có trong folder data/train và training và tạo ra file model.h5.
 
 - Chạy giao diện nhận diện cảm xúc:
+```bash
 $ python emotions.py --mode display
+```
